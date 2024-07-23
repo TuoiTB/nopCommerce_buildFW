@@ -4,14 +4,47 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>nopCommerce</groupId>
     <artifactId>nopCommerce_buildFW</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <!--  Compiler Code with Java 17  -->
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <!--  Encoding for Build/ Console  -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--  Encoding for Report  -->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!--  Global variable for dependencies  -->
+        <webdriver.version>4.22.0</webdriver.version>
+        <testng.version>7.8.0</testng.version>
+        <webdrivermanager.version>5.9.1</webdrivermanager.version>
     </properties>
-
+    <dependencies>
+        <!--  TestNG  -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+        <!-- Selenium Java-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${webdriver.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
 </project>
