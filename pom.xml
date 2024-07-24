@@ -21,6 +21,7 @@
         <testng.version>7.8.0</testng.version>
         <webdrivermanager.version>5.9.1</webdrivermanager.version>
         <log4j.version>2.19.0</log4j.version>
+        <allure.version>2.18.1</allure.version>
     </properties>
     <dependencies>
         <!--  TestNG  -->
@@ -51,6 +52,11 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
         </dependency>
     </dependencies>
 </project>
