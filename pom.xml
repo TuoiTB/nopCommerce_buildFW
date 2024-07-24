@@ -20,6 +20,7 @@
         <webdriver.version>4.22.0</webdriver.version>
         <testng.version>7.8.0</testng.version>
         <webdrivermanager.version>5.9.1</webdrivermanager.version>
+        <log4j.version>2.19.0</log4j.version>
     </properties>
     <dependencies>
         <!--  TestNG  -->
@@ -45,6 +46,11 @@
                     <artifactId>jcl-over-slf4j</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
     </dependencies>
 </project>

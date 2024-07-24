@@ -1,4 +1,5 @@
 package commons;
 
-public class BrowserList {
+public enum BrowserList {
+    CHROME, FIREFOX, EDGE, SAFARI;
 }
