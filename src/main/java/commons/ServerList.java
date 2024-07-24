@@ -1,4 +1,5 @@
 package commons;
 
-public class ServerList {
+public enum ServerList {
+    DEV, TEST, STAGING, LIVE;
 }

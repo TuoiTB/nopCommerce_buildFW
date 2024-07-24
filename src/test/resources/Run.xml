@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="nopCommerce - UI Automation">
+    <parameter name="server" value="test"/>
+
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportConfig.AllureTestListener"/>
+    </listeners>
+
+    <test name="Run on Chrome" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class
+                    name=""/>
+            <!--<class
+                    name="Register.Register_with_data_driven_testing"/>-->
+            <!--<class
+                    name="Register.Register_02_Validation"/>-->
+           <!-- <class
+                    name="Login.Login_01"/>-->
+           <!-- <class
+                    name="Account.Account"/>-->
+            <!--<class
+                    name="Search.Search_AdvancedSearch"/>
+            <class
+                    name="Search.Sort_Paging"/>-->
+            <!--<class
+                    name="Order.Order"/>-->
+        </classes>
+    </test>
+
+</suite>
